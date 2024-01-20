@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const qs = require("querystring");
 
-const server = http.createServer((req, res) =? {
+const server = http.createServer((req, res) => {
     if (req.url === "/style") {
 	res.statusCode = 200;
 	res.setHeader("Content-Type", "text/html");
