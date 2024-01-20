@@ -3,7 +3,7 @@ const fs = require("fs");
 const qs = require("querystring");
 
 const server = http.createServer((req, res) => {
-    if (req.url === "/style") {
+    if (req.url === "/") {
 	res.statusCode = 200;
 	res.setHeader("Content-Type", "text/html");
 	fs.readFile("/home/sweatshirt/sweatycorp2/pages/index.html", (error, data) => {
@@ -19,6 +19,6 @@ const server = http.createServer((req, res) => {
     }
 });
 
-const port = process.env.prot || 8080;
+const port = process.env.port || 8080;
 
 server.listen(port, console.log(`Server running on port ${port}`));
