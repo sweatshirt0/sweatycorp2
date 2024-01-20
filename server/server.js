@@ -17,6 +17,21 @@ const server = http.createServer((req, res) => {
 	    res.end();
 	});
     }
+
+    if (req.url === "/style") {
+	res.statusCode = 200;
+	res.setHeader("Content-Type", "text/css");
+	fs.readFile("/home/sweatshirt/sweatycorp2/style/style.css", (error, data) => {
+	    if (error) {
+		res.writeHead(404);
+		res.write("Error: file not found.");
+	    } else {
+		res.write(data);
+	    }
+
+	    res.end();
+	});
+    }
 });
 
 const port = process.env.port || 8080;
