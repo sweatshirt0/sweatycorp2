@@ -7,6 +7,15 @@ body {
     border: 1px solid #4AF626;
     margin: auto auto;
     padding: 20px;
-    width: 620px;
-    top: 20vh;
+    width: 95%;
+    height: 25%;
+    top: .5vh;
+}
+
+.win-title {
+    color: #4af626;
+    font-family: monospace;
+    font-size: 18px;
+    margin: 5px 0 0 10px;
+    
 }
