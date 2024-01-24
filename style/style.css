@@ -1,10 +1,11 @@
 body {
     background-color: black;
+    font-family: VCR OSD Mono,sans-serif;
 }
 
 .main-content-wrapper {
     position: relative;
-    border: 1px solid #4AF626;
+    border: 1px solid #0aff00;
     margin: auto auto;
     padding: 20px;
     width: 94%;
@@ -13,9 +14,8 @@ body {
 }
 
 .win-title {
-    color: #4af626;
-    font-family: monospace;
-    font-size: 20px;
-    margin: 25px 0 -5px 25px;
+    color: #0aff00;
+    font-size: 1.2rem;
+    margin: 25px 0 -5px 30px;
     font-weight: 1000;
 }
