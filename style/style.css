@@ -51,6 +51,7 @@ body {
     border-right: 1px solid #0aff00;
     text-decoration: none;
     color: #0aff00;
+    font-weight: bold;
 }
 
 .info-link {
@@ -60,4 +61,5 @@ body {
     width: 50%;
     text-decoration: none;
     color: #0aff00;
+    font-weight: bold;
 }
