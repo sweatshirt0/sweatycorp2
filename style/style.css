@@ -34,3 +34,24 @@ body {
     margin-top: -20px;
     font-weight: bold;
 }
+
+.nav-wrapper {
+    position: relative;
+    border: 1px solid #0aff00;
+    display: flex;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.channel-link {
+    padding: 15px 205px 15px 175px;
+    border-right: 1px solid #0aff00;
+    text-decoration: none;
+    color: #0aff00;
+}
+
+.info-link {
+    padding: 15px 0 15px 195px;
+    text-decoration: none;
+    color: #0aff00;
+}
