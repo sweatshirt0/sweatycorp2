@@ -19,3 +19,18 @@ body {
     margin: 25px 0 -5px 30px;
     font-weight: 1000;
 }
+
+.inside-title {
+    color: #87ceeb;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 3px;
+}
+
+.inside-subtitle {
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -20px;
+    font-weight: bold;
+}
