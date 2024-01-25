@@ -44,14 +44,20 @@ body {
 }
 
 .channel-link {
-    padding: 15px 205px 15px 175px;
+    position: relative;
+    text-align: center;
+    width: 50%;
+    padding: 15px 0;
     border-right: 1px solid #0aff00;
     text-decoration: none;
     color: #0aff00;
 }
 
 .info-link {
-    padding: 15px 0 15px 195px;
+    position: relative;
+    text-align: center;
+    padding: 15px 0;
+    width: 50%;
     text-decoration: none;
     color: #0aff00;
 }
