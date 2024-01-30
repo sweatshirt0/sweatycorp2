@@ -86,3 +86,8 @@ body {
     background-color: #0aff00;
     font-weight: bold;
 }
+
+.about-title {
+    color: #0aff00;
+    margin-top: 55px;
+}
