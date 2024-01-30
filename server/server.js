@@ -1,51 +1,55 @@
 const http = require("http");
 const fs = require("fs");
 const qs = require("querystring");
+const path = require('path');
 
 const server = http.createServer((req, res) => {
-    if (req.url === "/") {
-	res.statusCode = 200;
-	res.setHeader("Content-Type", "text/html");
-	fs.readFile("/home/sweatshirt/sweatycorp2/pages/index.html", (error, data) => {
+  const FP = path.join(process.env.HOME, 'sweatycorp2/pages/index.html');
+  const FP2 = path.join(process.env.HOME, 'sweatycorp2/pages/info.html');
+  const FPS = path.join(process.env.HOME, 'sweatycorp2/style/style.css');
+  if (req.url === "/") {
+	  res.statusCode = 200;
+	  res.setHeader("Content-Type", "text/html");
+	  fs.readFile(FP, (error, data) => {
 	    if (error) {
-		res.writeHead(404);
-		res.write("Error: file not found.");
+		    res.writeHead(404);
+		    res.write("Error: file not found.");
 	    } else {
-		res.write(data)
+		    res.write(data)
 	    }
 
 	    res.end();
-	});
-    }
+	  });
+  }
 
-    if (req.url === "/info") {
-	res.statusCode = 200;
-	res.setHeader("Content-Type", "text/html");
-	fs.readFile("/home/sweatshirt/sweatycorp2/pages/info.html", (error, data) => {
+  if (req.url === "/info") {
+	  res.statusCode = 200;
+	  res.setHeader("Content-Type", "text/html");
+	  fs.readFile(FP2, (error, data) => {
 	    if (error) {
-		res.writeHead(404);
-		res.write("Error: file not found.");
+		    res.writeHead(404);
+		    res.write("Error: file not found.");
 	    } else {
-		res.write(data);
+		    res.write(data);
 	    }
 	    res.end();
-	});
-    }
+	  });
+  }
 
-    if (req.url === "/style") {
-	res.statusCode = 200;
-	res.setHeader("Content-Type", "text/css");
-	fs.readFile("/home/sweatshirt/sweatycorp2/style/style.css", (error, data) => {
+  if (req.url === "/style") {
+	  res.statusCode = 200;
+	  res.setHeader("Content-Type", "text/css");
+	  fs.readFile(FPS, (error, data) => {
 	    if (error) {
-		res.writeHead(404);
-		res.write("Error: file not found.");
+		    res.writeHead(404);
+		    res.write("Error: file not found.");
 	    } else {
-		res.write(data);
+		    res.write(data);
 	    }
 
 	    res.end();
-	});
-    }
+	  });
+  }
 });
 
 const port = process.env.port || 8080;
