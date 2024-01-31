@@ -127,3 +127,33 @@ body {
 .hacker-ethic-link:hover {
     text-decoration: underline;
 }
+
+.libcasa-link {
+    text-decoration: none;
+    color: #87ceeb;
+    font-weight: bold;
+}
+
+.libcasa-link:hover {
+    text-decoration: underline;
+}
+
+.klout-link {
+    text-decoration: none;
+    color: #87ceeb;
+    font-weight: bold;
+}
+
+.klout-link:hover {
+    text-decoration: underline;
+}
+
+.truecast-link {
+    text-decoration: none;
+    color: #87ceeb;
+    font-weight: bold;
+}
+
+.truecast-link:hover {
+    text-decoration: underline;
+}
