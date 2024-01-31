@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #111;
     font-family: VCR OSD Mono,sans-serif;
 }
 
@@ -8,15 +8,23 @@ body {
     border: 1px solid #0aff00;
     margin: auto auto;
     padding: 20px;
-    width: 94%;
+    width: 885px;
     height: 77%;
     top: .5vh;
 }
 
+.win-title-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-right: 725px;
+    margin-bottom: -25px;
+}
+
 .win-title {
+    position: relative;
     color: #0aff00;
     font-size: 1.2rem;
-    margin: 25px 0 -5px 30px;
     font-weight: 1000;
 }
 
@@ -41,6 +49,7 @@ body {
     display: flex;
     margin-left: -20px;
     margin-right: -20px;
+    margin-top: -5px;
 }
 
 .channel-link {
