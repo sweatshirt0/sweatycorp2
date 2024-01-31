@@ -102,3 +102,28 @@ body {
     margin-left: -5px;
     font-size: 1.6rem;
 }
+
+.info-content {
+    color: #0aff00;
+    font-size: 1.2rem;
+}
+
+.hacker-manifesto-link {
+    text-decoration: none;
+    color: #87ceeb;
+    font-weight: bold;
+}
+
+.hacker-manifesto-link:hover {
+    text-decoration: underline;
+}
+
+.hacker-ethic-link {
+    text-decoration: none;
+    color: #87ceeb;
+    font-weight: bold;
+}
+
+.hacker-ethic-link:hover {
+    text-decoration: underline;
+}
