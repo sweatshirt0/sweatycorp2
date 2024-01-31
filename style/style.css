@@ -3,6 +3,15 @@ body {
     font-family: VCR OSD Mono,sans-serif;
 }
 
+.main-content-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.emain-content-wrapper {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 .main-content-wrapper {
     position: relative;
     border: 1px solid #0aff00;
@@ -11,6 +20,9 @@ body {
     width: 885px;
     height: 77%;
     top: .5vh;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
 .win-title-wrapper {
@@ -156,4 +168,11 @@ body {
 
 .truecast-link:hover {
     text-decoration: underline;
+}
+
+.haru {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
