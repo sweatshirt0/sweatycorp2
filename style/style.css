@@ -198,3 +198,27 @@ body {
     color: #0aff00;
     font-size: 1.25rem;
 }
+
+.grid-container {
+    margin-top: 20px;
+    margin-left: 10px;
+    display: inline-grid;
+}
+
+.blog-link {
+    position: relative;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #0aff00;
+    border-radius: 5px;
+    top: 30px;
+    text-decoration: none;
+    color: #0aff00;
+    font-weight: bold;
+}
+
+.blog-link:hover {
+    box-shadow: 2px 2px 5px #0aff00;
+}
