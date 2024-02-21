@@ -9,6 +9,7 @@ const server = http.createServer((req, res) => {
     const FP2 = path.join(process.env.HOME, 'sweatycorp2/pages/info.html');
     const FPS = path.join(process.env.HOME, 'sweatycorp2/style/style.css');
     const FPI = path.join(process.env.HOME, 'sweatycorp2/style/newhara.jpg');
+    const FPI2 = path.join(process.env.HOME, 'sweatycorp2/style/rick.jpeg');
     
     if (req.url === "/") {
 	res.statusCode = 200;
@@ -73,6 +74,21 @@ const server = http.createServer((req, res) => {
 	res.statusCode = 200;
 	res.setHeader("Content-Type", "text/html");
 	fs.readFile(FPI, (error, data) => {
+	    if (error) {
+		res.writeHead(404);
+		res.write("Error: File not found.");
+	    } else {
+		res.write(data);
+	    }
+
+	    res.end();
+	});
+    }
+
+    if (req.url === "/rick") {
+	res.statusCode = 200;
+	res.setHeader("Content-Type", "text/html");
+	fs.readFile(FPI2, (error, data) => {
 	    if (error) {
 		res.writeHead(404);
 		res.write("Error: File not found.");
