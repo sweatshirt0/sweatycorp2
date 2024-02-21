@@ -11,6 +11,7 @@ const server = http.createServer((req, res) => {
   const FPI = path.join(process.env.HOME, 'sweatycorp2/style/newhara.jpg');
   const FPI2 = path.join(process.env.HOME, 'sweatycorp2/style/rick.jpeg');
   const FPI3 = path.join(process.env.HOME, 'sweatycorp2/style/spacegliter.gif');
+  const p404 = path.join(process.env.HOME, 'sweatycorp2/pages/p404.html');
   
   if (req.url === "/") {
 	  res.statusCode = 200;
@@ -114,6 +115,22 @@ const server = http.createServer((req, res) => {
       }
 
       res.end();
+    });
+  }
+
+  if (req.url === "/hackmacs") {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/html");
+    fs.readFile(p404, (error, data) => {
+      if (error) {
+        res.writeHead(404);
+        res.write("Error: File not found.");
+      } else {
+        res.write(data);
+      }
+
+      res.end();
+      
     });
   }
 
