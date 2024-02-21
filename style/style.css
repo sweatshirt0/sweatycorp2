@@ -202,7 +202,7 @@ body {
 .grid-container {
     margin-top: 20px;
     margin-left: 10px;
-    display: inline-grid;
+    display: grid;
 }
 
 .blog-link {
@@ -213,7 +213,8 @@ body {
     padding-bottom: 15px;
     border: 1px solid #0aff00;
     border-radius: 5px;
-    top: 30px;
+    top: 50px;
+    left: -285px;
     text-decoration: none;
     color: #0aff00;
     font-size: 1.2rem;
@@ -222,6 +223,43 @@ body {
 }
 
 .blog-link:hover {
+    box-shadow: 5px 5px 5px #0aff00;
+    background-color: #0aff00;
+    color: #111;
+    border: 1px solid #111;
+}
+
+.rick-blog {
+    border: 1px solid #0aff00;
+    border-radius: 5px;
+}
+
+.hackmacs {
+    position: relative;
+    left: 300px;
+    top: -306px;
+    border: 1px solid #0aff00;
+    border-radius: 5px;
+}
+
+.hackmacs-link {
+    position: relative;
+    padding-left: 96px;
+    padding-right: 96px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px solid #0aff00;
+    border-radius: 5px;
+    left: 15px;
+    top: -256px;
+    text-decoration: none;
+    color: #0aff00;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: background-color 0.35s;
+}
+
+.hackmacs-link:hover {
     box-shadow: 5px 5px 5px #0aff00;
     background-color: #0aff00;
     color: #111;
