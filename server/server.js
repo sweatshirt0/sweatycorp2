@@ -11,6 +11,7 @@ const server = http.createServer((req, res) => {
   const FPI = path.join(process.env.HOME, 'sweatycorp2/style/newhara.jpg');
   const FPI2 = path.join(process.env.HOME, 'sweatycorp2/style/rick.jpeg');
   const FPI3 = path.join(process.env.HOME, 'sweatycorp2/style/spacegliter.gif');
+  const FPI4 = path.join(process.env.HOME, 'sweatycorp2/style/portal.gif');
   const p404 = path.join(process.env.HOME, 'sweatycorp2/pages/p404.html');
   
   if (req.url === "/") {
@@ -122,6 +123,22 @@ const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader("Content-Type", "text/html");
     fs.readFile(p404, (error, data) => {
+      if (error) {
+        res.writeHead(404);
+        res.write("Error: File not found.");
+      } else {
+        res.write(data);
+      }
+
+      res.end();
+      
+    });
+  }
+
+  if (req.url === "/pixelrick") {
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/html");
+    fs.readFile(FPI4, (error, data) => {
       if (error) {
         res.writeHead(404);
         res.write("Error: File not found.");

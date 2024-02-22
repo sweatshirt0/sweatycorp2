@@ -214,7 +214,7 @@ body {
     border: 1px solid #0aff00;
     border-radius: 5px;
     top: 50px;
-    left: -285px;
+    left: -290px;
     text-decoration: none;
     color: #0aff00;
     font-size: 1.2rem;
@@ -230,13 +230,15 @@ body {
 }
 
 .rick-blog {
+    position: relative;
+    left: -5px;
     border: 1px solid #0aff00;
     border-radius: 5px;
 }
 
 .hackmacs {
     position: relative;
-    left: 300px;
+    left: 295px;
     top: -306px;
     border: 1px solid #0aff00;
     border-radius: 5px;
@@ -244,13 +246,13 @@ body {
 
 .hackmacs-link {
     position: relative;
-    padding-left: 96px;
-    padding-right: 96px;
+    padding-left: 93px;
+    padding-right: 93px;
     padding-top: 15px;
     padding-bottom: 15px;
     border: 1px solid #0aff00;
     border-radius: 5px;
-    left: 14px;
+    left: 11px;
     top: -256px;
     text-decoration: none;
     color: #0aff00;
@@ -260,6 +262,38 @@ body {
 }
 
 .hackmacs-link:hover {
+    box-shadow: 5px 5px 5px #0aff00;
+    background-color: #0aff00;
+    color: #111;
+    border: 1px solid #111;
+}
+
+.gameimg {
+    position: relative;
+    left: 595px;
+    border: 1px solid #0aff00;
+    border-radius: 5px;
+    top: -612px;
+}
+
+.game-link {
+    position: relative;
+    padding-left: 106px;
+    padding-right: 106px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #0aff00;
+    border: 1px solid #0aff00;
+    border-radius: 5px;
+    left: 314px;
+    top: -562px;
+    transition: background-color 0.35s;
+}
+
+.game-link:hover {
     box-shadow: 5px 5px 5px #0aff00;
     background-color: #0aff00;
     color: #111;
