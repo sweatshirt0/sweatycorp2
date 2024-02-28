@@ -332,7 +332,7 @@ body {
 .gittea {
     position: relative;
     top: -820px;
-    left: 300px;
+    left: 295px;
     border: 1px solid #0aff00;
     border-radius: 5px;
 }
@@ -340,7 +340,7 @@ body {
 .gittea-link {
     position: relative;
     top: -770px;
-    left: 13px;
+    left: 8px;
     border: 1px solid #0aff00;
     border-radius: 5px;
     padding: 15px 115px;

@@ -16,6 +16,7 @@ const server = http.createServer((req, res) => {
     const GP = path.join(process.env.HOME, 'sweatycorp2/pages/gamelist.html');
     const HH = path.join(process.env.HOME, 'sweatycorp2/style/yukicode.gif');
     const HM = path.join(process.env.HOME, 'sweatycorp2/style/hack.gif');
+    const LC = path.join(process.env.HOME, 'sweatycorp2/style/casa.gif');
     
     if (req.url === "/") {
 	res.statusCode = 200;
@@ -189,6 +190,22 @@ const server = http.createServer((req, res) => {
 	res.statusCode = 200;
 	res.setHeader("Content-Type", "text/html");
 	fs.readFile(HM, (error, data) => {
+	    if (error) {
+		res.writeHead(404);
+		res.write("Error: File not found.");
+	    } else {
+		res.write(data);
+	    }
+
+	    res.end();
+	    
+	});
+    }
+
+    if (req.url === "/libcasa") {
+	res.statusCode = 200;
+	res.setHeader("Content-Type", "text/html");
+	fs.readFile(LC, (error, data) => {
 	    if (error) {
 		res.writeHead(404);
 		res.write("Error: File not found.");
