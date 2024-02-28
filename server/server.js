@@ -13,7 +13,8 @@ const server = http.createServer((req, res) => {
     const FPI3 = path.join(process.env.HOME, 'sweatycorp2/style/spacegliter.gif');
     const FPI4 = path.join(process.env.HOME, 'sweatycorp2/style/portal.gif');
     const p404 = path.join(process.env.HOME, 'sweatycorp2/pages/p404.html');
-    const GP = path.join(process.env.HOME, 'sweatycorp/pages/gamelist.html');
+    const GP = path.join(process.env.HOME, 'sweatycorp2/pages/gamelist.html');
+    const HH = path.join(process.env.HOME, 'sweatycorp2/style/yukicode.gif');
     
     if (req.url === "/") {
 	res.statusCode = 200;
@@ -107,7 +108,7 @@ const server = http.createServer((req, res) => {
 
     if (req.url === "/lore") {
 	res.statusCode = 200;
-	res.setHeader("Content-Type", "text.html");
+	res.setHeader("Content-Type", "text/html");
 	fs.readFile(FPI3, (error, data) => {
 	    if (error) {
 		res.writeHead(404);
@@ -165,6 +166,21 @@ const server = http.createServer((req, res) => {
 
 	    res.end();
 	    
+	});
+    }
+
+    if (req.url === "/happyhacking") {
+	res.statusCode = 200;
+	res.setHeader("Content-Type", "text/html");
+	fs.readFile(HH, (error, data) => {
+	    if (error) {
+		res.writeHead(404);
+		res.write("Error: file not found.");
+	    } else {
+		res.write(data);
+	    }
+
+	    res.end();
 	});
     }
     

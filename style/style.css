@@ -207,8 +207,8 @@ body {
 
 .blog-link {
     position: relative;
-    padding-left: 116px;
-    padding-right: 116px;
+    padding-left: 120px;
+    padding-right: 120px;
     padding-top: 15px;
     padding-bottom: 15px;
     border: 1px solid #0aff00;
@@ -238,7 +238,7 @@ body {
 
 .hackmacs {
     position: relative;
-    left: 294px;
+    left: 295px;
     top: -306px;
     border: 1px solid #0aff00;
     border-radius: 5px;
@@ -246,8 +246,8 @@ body {
 
 .hackmacs-link {
     position: relative;
-    padding-left: 86px;
-    padding-right: 86px;
+    padding-left: 95px;
+    padding-right: 95px;
     padding-top: 15px;
     padding-bottom: 15px;
     border: 1px solid #0aff00;
@@ -278,8 +278,8 @@ body {
 
 .game-link {
     position: relative;
-    padding-left: 104px;
-    padding-right: 104px;
+    padding-left: 107px;
+    padding-right: 107px;
     padding-top: 15px;
     padding-bottom: 15px;
     font-size: 1.2rem;
@@ -288,7 +288,7 @@ body {
     color: #0aff00;
     border: 1px solid #0aff00;
     border-radius: 5px;
-    left: 312px;
+    left: 313px;
     top: -563px;
     transition: background-color 0.35s;
 }
@@ -298,4 +298,33 @@ body {
     background-color: #0aff00;
     color: #111;
     border: 1px solid #111;
+}
+
+.github {
+    position: relative;
+    top: -515px;
+    left: -4px;
+    border: 1px solid #0aff00;
+    border-radius: 5px;
+}
+
+.github-link {
+    position: relative;
+    top: -464px;
+    left: -288px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0aff00;
+    border: 1px solid #0aff00;
+    border-radius: 5px;
+    padding: 15px 110px;
+    transition: background-color 0.35s;
+}
+
+.github-link:hover {
+    border: 1px solid #111;
+    color: #111;
+    background-color: #0aff00;
+    box-shadow: 5px 5px 5px #0aff00;
 }
