@@ -15,6 +15,7 @@ const server = http.createServer((req, res) => {
     const p404 = path.join(process.env.HOME, 'sweatycorp2/pages/p404.html');
     const GP = path.join(process.env.HOME, 'sweatycorp2/pages/gamelist.html');
     const HH = path.join(process.env.HOME, 'sweatycorp2/style/yukicode.gif');
+    const HM = path.join(process.env.HOME, 'sweatycorp2/style/hack.gif');
     
     if (req.url === "/") {
 	res.statusCode = 200;
@@ -181,6 +182,22 @@ const server = http.createServer((req, res) => {
 	    }
 
 	    res.end();
+	});
+    }
+
+    if (req.url === "/hackmode") {
+	res.statusCode = 200;
+	res.setHeader("Content-Type", "text/html");
+	fs.readFile(HM, (error, data) => {
+	    if (error) {
+		res.writeHead(404);
+		res.write("Error: File not found.");
+	    } else {
+		res.write(data);
+	    }
+
+	    res.end();
+	    
 	});
     }
     
