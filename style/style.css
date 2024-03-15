@@ -340,10 +340,10 @@ body {
 .gittea-link {
     position: relative;
     top: -770px;
-    left: 10px;
+    left: 12px;
     border: 1px solid #0aff00;
     border-radius: 5px;
-    padding: 15px 109px;
+    padding: 15px 107px;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
