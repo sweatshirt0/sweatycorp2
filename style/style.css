@@ -318,7 +318,7 @@ body {
     color: #0aff00;
     border: 1px solid #0aff00;
     border-radius: 5px;
-    padding: 15px 106px;
+    padding: 15px 104px;
     transition: background-color 0.35s;
 }
 
@@ -343,7 +343,7 @@ body {
     left: 12px;
     border: 1px solid #0aff00;
     border-radius: 5px;
-    padding: 15px 107px;
+    padding: 15px 105px;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
@@ -356,4 +356,34 @@ body {
     color: #111;
     box-shadow: 5px 5px 5px #0aff00;
     border: 1px solid #111;
+}
+
+.libcasa {
+    position: relative;
+    top: -1126px;
+    left: 595px;
+    border: 1px solid #0aff00;
+    border-radius: 5px;
+}
+
+.libcasa-link-in {
+    position: relative;
+    top: -1076px;
+    left: 312px;
+    border: 1px solid #0aff00;
+    border-radius: 5px;
+    padding: 15px 98px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0aff00;
+    transition: background-color 0.35s;
+}
+
+.libcasa-link-in:hover {
+    background-color: #0aff00;
+    color: #111;
+    box-shadow: 5px 5px 5px #0aff00;
+    border: 1px solid #111;
+    border-radius: 5px;
 }
